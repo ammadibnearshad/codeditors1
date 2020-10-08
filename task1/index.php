@@ -210,7 +210,7 @@ box-shadow: inset 0px -3px 6px 2px rgba(0,0,0,0.75);
   color: #fff;
 }
 .left-box ul li:hover{
-  background:#18cd03;
+  background:#18cd03 !important;
 }
 .left-box ul li a:hover{
   text-decoration: none;
@@ -251,6 +251,13 @@ box-shadow: inset 0px -3px 6px 2px rgba(0,0,0,0.75);
 <body>
   <div class="container">
     <div class="container main-conatiner">
+      <header>
+        <div class="row"></div>
+        <div class="col-8">
+          <h1 style="color: green;font-size: 50px;">Paratemporal</h1>
+        </div>
+        <div class="col-4"></div>
+      </header>
       <div class="row">
         <div class="content-box col-8 ">
           <div class="tv">
@@ -343,7 +350,7 @@ $btn.on('click', function(){
   var idbto="#"+id+"-box";
   var idlto="#"+id+"-list";
   $(idto).css("display","flex");
-  $(idlto).css("background","#18cd03");
+  $(idbto).css("background","#18cd03");
   if ($tv.hasClass('_off')) {
     $tv.removeClass('_off');
   } else {
